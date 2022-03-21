@@ -209,30 +209,37 @@ body
 {
   
     animation: chuva 7s linear infinite;
+    opacity: 0;
 }
 
 .chuva>div:nth-child(1)
 {
     animation-delay: 4s;
+    font-size: 1em;
 }
 .chuva>div:nth-child(2)
 {
     animation-delay: 6s;
+    font-size: .9em;
 }
 .chuva>div:nth-child(3)
 {
     animation-delay: 1s;
+    font-size: .3em;
 }
 .chuva>div:nth-child(4)
 {
     animation-delay: 3s;
+    font-size: .8em;
 }
 .chuva>div:nth-child(5)
 {
     animation-delay: 8s;
+    font-size: 1em;
 }
 .chuva>div:nth-child(6)
 {
+    font-size: .6em;
     animation-delay: .4s;
 }.chuva>div:nth-child(7)
 {
@@ -241,17 +248,20 @@ body
 
 .chuva>div:nth-child(8)
 {
+    font-size: .8em;
     animation-delay: 2s;
 }
 
 .chuva>div:nth-child(9)
 {
     animation-delay: 8.9s;
+    font-size: .4em;
 }
 
 .chuva>div:nth-child(10)
 {
     animation-delay: 4.3s;
+    font-size: .5em;
 }
 .chuva>div:nth-child(11)
 {
@@ -264,16 +274,19 @@ body
 .chuva>div:nth-child(13)
 {
     animation-delay: 9s;
+    font-size: .3em;
 }
 
 .chuva>div:nth-child(14)
 {
     animation-delay: 3.5s;
+    font-size: .9em;
 }
 
 .chuva>div:nth-child(15)
 {
     animation-delay: 0s;
+    font-size: .3em;
 }
 
 
@@ -302,7 +315,7 @@ body
     100%
     {
         opacity: 0;
-        transform: translateY(85vh);
+        transform: translateY(90vh);
     }
 
 }
