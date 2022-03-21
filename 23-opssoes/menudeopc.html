@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU DE OPÇÕES CRIATIVO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="barradenavega">
+        <ul>
+            <li class="list ativo">
+                <a href="#">
+                    <span class="icone"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="titulo"> Menu</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="titulo"> Perfil</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="titulo"> Mensagens</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="titulo"> Configurações</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="lock-open-outline"></ion-icon></span>
+                    <span class="titulo"> Senha</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
+                    <span class="titulo"> Ajuda</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icone"><ion-icon name="information-circle-outline"></ion-icon></span>
+                    <span class="titulo"> Sobre</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menuicon">
+        <ion-icon name="menu-outline" class="menu"></ion-icon>
+        <ion-icon name="close-outline" class="xix"></ion-icon>
+    </div>
+
+    <div class="chuva">
+
+    <div>
+        <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </div>
+
+    <div>
+        <ion-icon name="logo-twitter"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+
+    <div>
+        <ion-icon name="logo-tiktok"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </div>
+
+
+    <div>
+        <ion-icon name="logo-tiktok"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-twitter"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+
+    <div>
+        <ion-icon name="logo-tiktok"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+    <div>
+        <ion-icon name="logo-twitter"></ion-icon>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let menusin = document.querySelector('.menuicon')
+        let card = document.querySelector('.barradenavega')
+        menusin.onclick = function()
+        {
+            menusin.classList.toggle('ativo')
+            card.classList.toggle('ativo')
+        }
+
+
+        let lista = document.querySelectorAll('.list')
+
+        for(let i = 0; i< lista.length; i++){
+
+            lista[i].onclick = function(){
+
+                let j = 0 ;
+
+                while(j < lista.length){
+
+                    lista[j++].className = 'list';
+                }
+
+                lista[i].className ='list ativo';
+            }
+
+        }
+    </script>
+</body>
+</html>
