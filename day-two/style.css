@@ -1,0 +1,50 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: "Poppins",sans-serif;
+}
+
+body
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: url("https://images.nnteens.com/wp-content/uploads/2019/12/skylar-vox-take-it-easy-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.link
+{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 42px;
+
+    border-radius: 5px;
+
+    background-image: linear-gradient(to right, rgba(0, 217, 255, 0.658),rgba(183, 0, 255, 0.781));
+    background-repeat: no-repeat;
+
+    background-size: 0 100%;
+    background-position-x: right;
+    
+    transition: background-size .4s;
+}
+
+.link:hover
+{
+
+    background-size: 100% 100%;
+    background-position-x: left;
+
+}

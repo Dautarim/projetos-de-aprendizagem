@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '3ds', sans-serif;
+   
+    color: white;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+
+    background-color: rgb(0, 4, 252);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+.container .card{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.623);
+
+}
+
+.container .card .cardp{
+    position: absolute;
+    bottom: 10px;
+    font-size: 2em;
+    
+}
+
+#vava{
+    background-color: rgb(6, 143, 255);
+    background-image: url("https://i.pinimg.com/originals/f7/69/75/f76975feaf7645473dfec0dd89c8bcfb.jpg");
+    background-size: cover;
+}
+#dautarim{
+    background-color: rgb(255, 0, 234);
+    background-image: url("https://preview.redd.it/ra69nvqcew361.jpg?width=640&crop=smart&auto=webp&s=7ab968a07feaba67ef821e6553b6f1837196029a");
+    background-size: cover;
+}
+#docinho{
+    background-color: rgb(255, 0, 34);
+    background-image: url("https://pbs.twimg.com/media/EdZLZYNX0AEwqZm.jpg");
+    background-size: cover;
+}
+#detonador{
+    background-color: rgb(0, 248, 227);
+    background-image: url("https://i.pinimg.com/originals/64/3e/29/643e297b33c25465104e41684e4655af.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOS E FATOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card" id="vava" >
+            <p class="cardp" >
+                VAVA
+            </p>
+        </div>
+
+        <div class="card" id="docinho">
+            <p class="cardp">
+                DOCINHO
+            </p>
+        </div>
+
+        <div class="card" id="dautarim">
+            <p class="cardp">
+                DAUTARIM
+            </p>
+        </div>
+
+        <div class="card" id="detonador">
+            <p class="cardp">
+                DETONADOR
+            </p>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        scale: 1,
+        glare: true
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".card"));
+
+ 
+</script>
+</body>
+</html>

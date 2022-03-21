@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO LANDING PAGE</title>
+    
+</head>
+<body>
+    <div class="navegas">
+
+        <div class="banner">
+
+        <img src="imgs/banner.jpg" alt="gatinha" class="cover">
+
+        </div>
+        <div class="navlinks">
+            
+            <ul >
+
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" >Sobre</a></li>
+                <li><a href="#" >Contatos</a></li>
+                <li><a href="#" >Portfolio</a></li>
+                <li><a href="#" >Serviços</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="nv"></div>
+            <a href="#" class="btn">ME CONTRATE</a>
+        </header>
+
+        <div class="caixadeimagem">
+
+            <img src="imgs/girl.jpg" alt="minarasta" class="cover">
+
+        </div>
+
+        <div class="conteudo">
+
+            <h2>OLÁ, SOU<br> <span>MARIA IZABEL</span></h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium non enim esse, dolor temporibus magni aspernatur illo dignissimos corrupti quam at veritatis dolorum consectetur necessitatibus ab alias blanditiis error. </p>
+
+            <a href="#" class="btn">Baixe o meu CV</a>
+
+        </div>
+        <footer>
+
+            <ul class="csi">
+                <li><a href="#"><img src="imgs/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="imgs/instagram.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="imgs/twitter.png" alt="facebook"></a></li>
+            </ul>
+    
+            <p class="coppy">&copy;Online Tutorials, por Docinho...</p>
+        </footer>
+    </section>
+
+  
+    <script>
+        let menu = document.querySelector('.nv');
+        let page = document.querySelector('.navegas')
+        let menu2 = document.querySelector('.sec')
+        menu.onclick = function(){
+            menu.classList.toggle('ativo')
+            page.classList.toggle('ativo')
+            menu2.classList.toggle('ativo')
+        }
+    </script>
+</body>
+</html>

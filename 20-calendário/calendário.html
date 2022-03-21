@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDÁRIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calendário">
+        <p id="mes"></p>
+        <p id="dia"></p>
+        <p id="dianum"></p>
+        <p id="ano"></p>
+    </div>
+
+    <script>
+
+        const lang = navigator.language
+        let data = new Date()
+
+        let dianumero = data.getDate()
+        let nummes = data.getMonth()
+        let anoat = data.getFullYear()
+
+        let diadesumana = data.toLocaleString(lang,{weekday:"long"})
+        let nomemes = data.toLocaleString(lang,{month:"long"})
+
+        document.getElementById('dianum').innerHTML = dianumero
+        document.getElementById('dia').innerHTML= diadesumana
+        document.getElementById('mes').innerHTML = nomemes
+        document.getElementById('ano').innerHTML = anoat
+
+
+       
+
+   
+    </script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+VanillaTilt.init(document.querySelector(".calendário"), {
+    max: 25,
+    glare: true,
+    speed: 400
+});
+
+//It also supports NodeList
+VanillaTilt.init(document.querySelectorAll(".calendário"));
+
+    </script>
+</body>
+</html>

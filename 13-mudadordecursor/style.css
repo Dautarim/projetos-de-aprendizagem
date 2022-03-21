@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '3ds',sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cont p{
+
+    margin: 20px;
+    font-size: 3em;
+
+}
+
+.cursor{
+
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+
+}
+
+.cont:hover ~ .cursor{
+
+    transform: scale(6);
+    
+}

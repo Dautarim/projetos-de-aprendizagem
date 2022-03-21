@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body
+{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images5.alphacoders.com/880/880276.jpg");
+    background-position: right center;
+    min-height: 100vh;
+
+}
+
+.calendário
+{
+    position: absolute;
+    top: 35%;
+    right: 200px;
+    background-color: rgba(231, 230, 230, 0.199);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+  /* -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgba(187, 186, 186, 0.267) );*/
+
+}
+
+
+.calendário #mes
+{
+
+    position: relative;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 255, 0.432);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.calendário #dia
+{
+
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    font-weight: 400;
+   
+}
+
+.calendário #dianum
+{
+
+    margin-top: 0;
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    line-height: 1em;
+    font-weight: 700;
+   
+}
+
+.calendário #ano
+{
+
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+   
+}

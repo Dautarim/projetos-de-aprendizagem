@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFEITO PARALAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+
+        <img src="imgs/bg.jpg" alt="ceu" id="ceu">
+        <img src="imgs/moon.png" alt="lua" id="lua">
+        <img src="imgs/mountain.png" alt="montanha" id="montanha">
+        <img src="imgs/road.png" alt="estrada" id="estrada">
+
+        <h2 id="text">DOCINHO</h2>
+    </section>
+   
+        <main>
+            <h1>TEXTANDO O EFEITO PARALAX </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate at quod consequuntur eaque ratione veritatis? Similique nobis in quasi, veniam nesciunt fugit consequatur vitae magnam. Voluptate reprehenderit facilis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione suscipit sapiente tempora, quae nihil! Sed accusamus facilis reiciendis, repudiandae animi voluptatum fugiat dignissimos architecto minima non distinctio id in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum esse, optio sapiente, similique quasi in tempora ad aspernatur iure ea, quae eaque nisi. Officiis fuga temporibus cupiditate fugit! Quam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate at quod consequuntur eaque ratione veritatis? Similique nobis in quasi, veniam nesciunt fugit consequatur vitae magnam. Voluptate reprehenderit facilis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione suscipit sapiente tempora, quae nihil! Sed accusamus facilis reiciendis, repudiandae animi voluptatum fugiat dignissimos architecto minima non distinctio id in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum esse, optio sapiente, similique quasi in tempora ad aspernatur iure ea, quae eaque nisi. Officiis fuga temporibus cupiditate fugit! Quam.
+            </p>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate at quod consequuntur eaque ratione veritatis? Similique nobis in quasi, veniam nesciunt fugit consequatur vitae magnam. Voluptate reprehenderit facilis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione suscipit sapiente tempora, quae nihil! Sed accusamus facilis reiciendis, repudiandae animi voluptatum fugiat dignissimos architecto minima non distinctio id in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum esse, optio sapiente, similique quasi in tempora ad aspernatur iure ea, quae eaque nisi. Officiis fuga temporibus cupiditate fugit! Quam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate at quod consequuntur eaque ratione veritatis? Similique nobis in quasi, veniam nesciunt fugit consequatur vitae magnam. Voluptate reprehenderit facilis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione suscipit sapiente tempora, quae nihil! Sed accusamus facilis reiciendis, repudiandae animi voluptatum fugiat dignissimos architecto minima non distinctio id in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum esse, optio sapiente, similique quasi in tempora ad aspernatur iure ea, quae eaque nisi. Officiis fuga temporibus cupiditate fugit! Quam.
+            </p>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate at quod consequuntur eaque ratione veritatis? Similique nobis in quasi, veniam nesciunt fugit consequatur vitae magnam. Voluptate reprehenderit facilis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione suscipit sapiente tempora, quae nihil! Sed accusamus facilis reiciendis, repudiandae animi voluptatum fugiat dignissimos architecto minima non distinctio id in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum esse, optio sapiente, similique quasi in tempora ad aspernatur iure ea, quae eaque nisi. Officiis fuga temporibus cupiditate fugit! Quam.
+            </p>
+        </main>
+
+    <script type="text/javascript">
+
+        let ceu = document.getElementById("ceu")
+        let lua = document.getElementById("lua")
+        let montanha = document.getElementById("montanha")
+        let estrada = document.getElementById("estrada")
+        let tetxo = document.getElementById("text")
+
+        window.addEventListener('scroll', function(){
+            var rolagem = window.scrollY
+
+            ceu.style.top = rolagem * .5 + 'px'
+            lua.style.left = -rolagem * .5 + 'px'
+            montanha.style.top = -rolagem * .15 + 'px'
+            estrada.style.top = rolagem * .15 + 'px'
+            tetxo.style.bottom = -rolagem * .5 + 'px'
+            
+        })
+
+    </script>
+</body>
+</html>

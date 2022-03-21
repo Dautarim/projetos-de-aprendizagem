@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÁGINA RESPONSIVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            
+           
+            <a href="#" class="logo">DOCINNHO</a>
+
+            <div class="botmenu" onclick="Trocamenu()">
+                <div class="brs" id="b1"></div>
+                <div class="brs" id="b2"></div>
+                <div class="brs" id="b3"></div>
+            </div>
+            <ul class="navega">
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">CONTATOS</a></li>
+                <li><a href="#">EQUIPE</a></li>
+
+            </ul>
+
+        </header>
+
+        <div class="conteudo">
+            <div class="texto">
+                <h2>PÁGINA <br> <span> SUPER RESPONSIVA </span> </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, laudantium aperiam. Itaque commodi repellendus nesciunt! Accusantium, modi ipsa dolore iusto voluptatum dicta quos illo laborum minima? Modi in veniam rem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eius non nihil rem laborum! Culpa nemo, quis obcaecati id sit nihil autem repellat veniam a, earum eaque fugiat? Blanditiis, explicabo?
+                </p>
+                <a href="#">Saiba mais...</a>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1646572698">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <img src="imgs/damam.png" alt="mina" class="gata">
+    </section>
+
+    <script>
+        function Trocamenu(){
+            const menu = document.querySelector('.botmenu')
+            const quadro = document.querySelector('.navega')
+
+            quadro.classList.toggle('ativo')
+            menu.classList.toggle('ativo')
+        }
+    </script>
+</body>
+</html>

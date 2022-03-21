@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFEITO PARALAX VERSÃO 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+
+        <img src="imgs/bg.jpg" alt="bg" id="bg">
+
+        <h2 id="texto"> DOCINHO </h2>
+
+        <img src="imgs/man.png" alt="man" id="man">
+        <img src="imgs/clouds_1.png" alt="clouds_1" id="clouds_1">
+        <img src="imgs/clouds_2.png" alt="clouds_2" id="clouds_2">
+        <img src="imgs/mountain_left.png" alt="mountain_left" id="mountain_left">
+        <img src="imgs/mountain_right.png" alt="mountain_right" id="mountain_right">
+
+    </section>
+
+    <div class="conteudo">
+        <h2>EFEITO PARALAX VERSÃO 2</h2>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae. <br><br><br>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae. <br><br>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, repellendus. Sunt harum ex labore odio repellat consectetur ut ipsa molestias, sit maxime, nesciunt, corrupti voluptate repudiandae unde. Nisi, officiis repudiandae.
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+     
+
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            scale: 1.5
+
+        }) 
+
+        gsap.to("#man",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            scale: .5
+
+        }) 
+
+        gsap.to("#mountain_left",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            x: -500
+
+        })
+
+        gsap.to("#mountain_right",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            x: 500
+
+        })
+
+        gsap.to("#texto",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            y: 500
+
+        })
+
+        gsap.to("#clouds_1",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            x: 500
+
+        })
+        gsap.to("#clouds_2",{
+            scrollTrigger: {
+                scrub: 1
+            }, 
+            x: -500
+
+        })
+        
+    </script>
+</body>
+</html>

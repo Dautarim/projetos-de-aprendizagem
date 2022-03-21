@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="bg"></div>
+        <header>
+            <a href="#" class="logo">DOCINHO</a>
+            <div class="tog"></div>
+            <ul class="navegasao">
+                <li>
+                    <a href="#" class="ativo">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" >Menu</a>
+                </li>
+                <li>
+                    <a href="#">Novidades</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="conteudo">
+
+            <div class="textos">
+                <h2>
+                    Frutas frescas todos os Dias
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore facere nobis eos veniam sed esse? Sit ad delectus nobis recusandae deserunt at facilis? Doloremque, voluptas magnam! Rerum, nemo explicabo.
+                    
+                </p>
+                <a href="#">Saiba mais...</a>
+            </div>
+
+            <div class="imagens">
+                <img src="imgs/apple.png" alt="" class="fruta" >
+            </div>
+
+        </div>
+
+        <ul class="thumb">
+            <li data-text="Maçã" class="ativo"><img src="imgs/apple.png" alt="" onclick="trocaimg('imgs/apple.png');trocabgc('#fc4a55')"></li>
+
+            <li data-text="Mango"><img src="imgs/mango.png" alt=""  onclick="trocaimg('imgs/mango.png');trocabgc('#FFCE03')"></li>
+
+            <li data-text="Melancia"><img src="imgs/watermelon.png" alt="" onclick="trocaimg('imgs/watermelon.png');trocabgc('#559128')"></li>
+
+            <li data-text="Fruta do Dragão"><img src="imgs/dragonFruits.png" alt="" onclick="trocaimg('imgs/dragonFruits.png');trocabgc('#F972AF')"></li>
+
+            <li data-text="Abacaxi"><img src="imgs/pineApple.png" alt="" onclick="trocaimg('imgs/pineApple.png');trocabgc('#FDCF56')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="imgs/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="imgs/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="imgs/twitter.png" alt="twiter"></a></li>
+        </ul>
+        
+    </section>
+
+    <script>
+        //menusinho na responsividade
+
+        let to = document.querySelector('.tog')
+        let resto = document.querySelector('.navegasao')
+        to.onclick = function()
+        {
+            to.classList.toggle('ativo')
+            resto.classList.toggle('ativo')
+        }
+
+        //trocador de imagem
+
+        function trocaimg(meupau)
+        {
+            document.querySelector('.fruta').src = meupau;
+        }
+
+        //trocador de background
+
+        function trocabgc(meupipi)
+        {
+            let bgc = document.querySelector('.bg')
+            bgc.style.background = meupipi;
+        }
+
+
+
+        //selecionador de opção
+        let opc = document.querySelectorAll('.thumb li')
+
+        for(let i = 0; i<opc.length; i++)
+        {
+            opc[i].onclick = function()
+            {
+                var c =0
+                while(c<opc.length)
+                {
+                    opc[c++].className = 'check'
+                }
+                opc[i].className ='check ativo'
+            }
+        }
+
+
+    </script>
+</body>
+</html>
