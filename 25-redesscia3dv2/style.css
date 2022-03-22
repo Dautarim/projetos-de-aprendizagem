@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.redesocial
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    transition: .5s;
+
+}
+
+.csi
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.csi li
+{
+    list-style: none;
+}
+
+.csi li::before
+{
+    content: attr(data-text);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% - 130px));
+
+    font-size: 14vw;
+    font-weight: 700;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: .5s;
+}
+
+.csi li:hover::before
+{
+    opacity: .1;
+    transform: translate(-50%, calc(-50% - 150px));
+
+}
+
+.csi li a
+{
+    position: relative;
+    display: inline-block;
+
+    width: 120px;
+    height: 120px;
+
+    background: rgb(255, 253, 253);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.192);
+
+    color: black;
+    text-decoration: none;
+    font-size: 4em;
+
+    border-radius: 10px;
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+    perspective: 500px;
+
+    transition: background .25s;
+
+}
+
+.csi li a .js-tilt-glare
+{
+    border-radius: 10px;
+}
+
+.csi li a:hover.facebook
+{
+    background: #446096;
+    color: white;
+}
+
+.csi li a:hover.twitter
+{
+    background:#02A3E1;
+    color: rgb(255, 255, 255);
+}
+
+.csi li a:hover.youtube
+{
+    background: #F20000;
+    color: white;
+}
+
+.csi li a:hover.instagram
+{
+    background: linear-gradient(to top,#fcc862,#C12881,#5258C3);
+    color: white;
+}
+
+.csi li a:hover.whatsapp
+{
+    background: #25C862;
+    color: white;
+}
+
+
+.csi li a .fa
+{
+    pointer-events: none;
+    transition: .25s;
+}
+
+.csi li a:hover .fa
+{
+    transform: scale(1.75) translateZ(50px);
+}

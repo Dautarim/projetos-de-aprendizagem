@@ -38,14 +38,28 @@ body{
     height: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.623);
+    transform-style: preserve-3d;
+    perspective: 500px;
 
+}
+
+.js-tilt-glare
+{
+    border-radius: 10px;
 }
 
 .container .card .cardp{
     position: absolute;
     bottom: 10px;
     font-size: 2em;
+
+    transition: .5s;
     
+}
+
+.container .card:hover .cardp
+{
+    transform: scale(1.75) translateZ(50px);
 }
 
 #vava{
