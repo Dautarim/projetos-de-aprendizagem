@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins",sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #131313;
+}
+
+.container
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 1200px;
+
+    transform-style: preserve-3d;
+}
+
+.container .cixa
+{
+    position: relative;
+
+    width: 300px;
+    height: 400px;
+
+    margin: 40px;
+
+    background: #232323;
+
+    border-radius: 20px;
+
+    transform-style: preserve-3d;
+}
+
+.container .cixa::before
+{
+    content: "NIKE";
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    font-size: 6em;
+    color: #ffffff;
+    font-weight: 900;
+    font-style: italic;
+
+    opacity: 0;
+    transition: .4s;
+}
+
+.container .cixa:hover::before
+{
+    opacity: .04;
+}
+
+.container .cixa::after
+{
+    content: "SPORT";
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 5em;
+    color: #ffffff;
+    font-weight: 900;
+    font-style: italic;
+
+    opacity: 0;
+    transition: .4s;
+}
+
+.container .cixa:hover::after
+{
+    opacity: .04;
+}
+
+
+.container .cixa .nome
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+    color: #ffffff;
+
+    width: 100%;
+
+    transform: translate3d(0,0,75px);
+    transform-style: preserve-3d;
+    z-index: 10;
+
+    transition: .4s;
+    opacity: 0;
+
+}
+
+.container .cixa:hover .nome
+{
+    opacity: 1;
+
+    top: 40px;
+}
+
+.container .cixa .compra
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translate3d(-50%,0,75px);
+    transform-style: preserve-3d;
+
+    color: #ffffff;
+    text-decoration: none;
+    background: #333;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    transition: .5s;
+
+    opacity: 0;
+
+    z-index: 10;
+}
+
+.container .cixa:hover .compra
+{
+    opacity: 1;
+
+    bottom: 30px;
+}
+
+.container .cixa .circulo
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    transform: translate3d(-50%,-50%,0px);
+    transform-style: preserve-3d;
+
+    opacity: 1;
+    z-index: 10;
+    transition: .5s;
+}
+
+.container .cixa .produto
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    max-width: 300px;
+
+    transform: translate3d(-50%,-50%, 0px) rotate(17deg);
+    transform-style: preserve-3d;
+
+    transition: .4s;
+
+    z-index: 11;
+}
+
+.container .cixa:hover .produto
+{
+    transform: translate3d(-50%,-50%,100px) rotate(17deg);
+}
+
+.container .cixa:nth-child(1) .circulo,
+.container .cixa:nth-child(1) .compra
+{
+    background-color: greenyellow;
+}
+
+.container .cixa:nth-child(2) .circulo,
+.container .cixa:nth-child(2) .compra
+{
+    background-color: rgb(60, 63, 250);
+}
+
+.container .cixa:nth-child(3) .circulo,
+.container .cixa:nth-child(3) .compra
+{
+    background-color: rgb(255, 130, 47);
+}
+
+.container .cixa:nth-child(4) .circulo,
+.container .cixa:nth-child(4) .compra
+{
+    background-color: rgb(248, 10, 10);
+}
+
+.container .cixa:nth-child(5) .circulo,
+.container .cixa:nth-child(5) .compra
+{
+    background-color: rgb(200, 10, 248);
+}
+
+.container .cixa:nth-child(6) .circulo,
+.container .cixa:nth-child(6) .compra
+{
+    background-color: rgb(10, 232, 248);
+}
