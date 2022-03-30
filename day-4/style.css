@@ -1,0 +1,77 @@
+
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background: url("https://niisiis.ru/fuckpix/download/lela-star-5-1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+a
+{
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 2px;
+
+    margin: 20px 0;
+    padding: 20px 30px;
+    border-radius: 43px;
+    overflow: hidden;
+
+    pointer-events: none;
+    background: linear-gradient(20deg, rgba(0, 60, 255, 0.507),rgba(0, 225, 255, 0.479));
+}
+
+a:nth-child(2)
+{
+    background: linear-gradient(90deg, rgba(212, 0, 255, 0.562),rgba(0, 225, 255, 0.479));
+}
+
+span
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    pointer-events: none;
+    border-radius: 50%;
+    background: white;
+    
+
+    animation: bola 1s linear infinite;
+}
+
+@keyframes bola
+{
+    0%
+    {
+        width: 0px ;
+        height: 0px ;
+    }
+
+    100%
+    {
+        width: 500px;
+        height: 500px;
+    }
+}

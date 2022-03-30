@@ -5,6 +5,8 @@
 }
 body{
     background-image: linear-gradient(rgb(18, 60, 61), rgba(46, 47, 73, 0.829));
+    background: url("https://pbs.twimg.com/media/FBInydfXIAEpsIi.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
    
