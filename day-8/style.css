@@ -18,13 +18,149 @@ body
     justify-content: center;
     min-height: 100vh;
 
-    background: blue;
+    background: rgb(255, 255, 255);
 
     color: white;
 }
 
 .container
 {
-    width: 25%;
-    background: black;
+    width: 310px;
+    height: 560px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgb(0, 0, 0);
+}
+
+.cima
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 7%;
+}
+
+.tela
+{
+    width: 94%;
+    height: 85%;
+    border-radius: 2px;
+    background: rgb(2, 6, 29);
+
+    overflow-y: scroll;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tela::-webkit-scrollbar
+{
+    background: rgb(4, 11, 49);
+    width: 5px; 
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.tela::-webkit-scrollbar-thumb
+{
+    background: rgb(65, 67, 80);
+    border-radius: 6px;
+}
+
+
+
+.tela>p
+{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+    background: rgba(3, 82, 255, 0.705);
+    
+}
+
+.tela p.ela
+{
+   display: inline-block;
+   align-self: flex-start;
+}
+
+.tela p.eu
+{
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.contato
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    background: blueviolet;
+
+}
+
+.contato .voltar a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+    
+}
+
+.contato .voltar a .ft
+{
+    font-size: 1.5em;
+}
+
+.contato .nome a
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    color: white;
+    text-decoration: none;
+}
+
+.contato .chamadas ion-icon
+{
+    font-size: 1.1em;
+    margin: 0px 5px;
+}
+
+
+
+.teclas
+{
+    
+    width: 100%;
+    height: 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 45px;
+
 }
