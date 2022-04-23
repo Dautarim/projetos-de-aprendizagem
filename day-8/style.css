@@ -36,7 +36,10 @@ body
     flex-direction: column;
 
     background: rgb(0, 0, 0);
+
 }
+
+
 
 .cima
 {
@@ -56,50 +59,60 @@ body
     border-radius: 2px;
     background: rgb(2, 6, 29);
 
-    overflow-y: scroll;
-
+   
     position: relative;
     display: flex;
     flex-direction: column;
 
 }
 
-.tela::-webkit-scrollbar
+.conversa
 {
-    background: rgb(4, 11, 49);
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.conversa::-webkit-scrollbar
+{
+    background: rgb(4, 9, 39);
     width: 5px; 
     border-radius: 8px;
     z-index: 2;
 }
 
-.tela::-webkit-scrollbar-thumb
+.conversa::-webkit-scrollbar-thumb
 {
-    background: rgb(65, 67, 80);
+    background: rgb(250, 2, 250);
     border-radius: 6px;
 }
 
 
-
-.tela>p
+.conversa p
 {
-    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.conversa p.ela
+{
     margin: 10px;
-    padding: 5px 10px;
-    background: rgba(3, 82, 255, 0.705);
-    
+    padding: 3px;
+    border-left: 2px solid rgb(255, 0, 255);
 }
 
-.tela p.ela
+.conversa p.eu
 {
-   display: inline-block;
-   align-self: flex-start;
-}
-
-.tela p.eu
-{
+    width: 90%;
     display: inline-block;
-    align-self: flex-end;
+    align-self: flex-start;
+    text-align: right;
+    border-right: 3px solid rgb(162, 0, 255);
+    padding: 3px;
 }
+
+
+
 
 .contato
 {
@@ -113,7 +126,7 @@ body
     top: 0;
     width: 100%;
 
-    background: blueviolet;
+    background: #47004E;
 
 }
 
@@ -162,5 +175,69 @@ body
     justify-content: space-between;
 
     padding: 0 45px;
+   
 
+}
+
+.teclas .sair a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.teclas .home a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.teclas .opcoes a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+.doit
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #47004E;
+    
+    width: 100%;
+
+    padding: 5px 15px;
+
+}
+
+.emojji ion-icon
+{
+    font-size: 1.2em;
+}
+
+.digite 
+{
+    border-left: 2px solid rgb(255, 0, 212);
+    padding: 0px 10px ;
+}
+
+.digite p
+{
+    opacity: .5;
+}
+
+.gravar ion-icon
+{
+    
+    font-size: 1.3em;
 }
