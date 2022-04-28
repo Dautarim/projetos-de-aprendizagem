@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <div class="caixinhas" onclick="enviar(this)">
+        <p>Bom dia amor</p>
+        <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
+    </div>
+
+    <script>
+        function abre()
+        {
+            window.open("https://www.instagram.com/mariaizabelcel/?hl=pt-br")
+        }
+        function enviar(nome)
+        {
+            let numero = prompt("Digite o numero do zap do destinatário")
+
+            let texto = nome.firstElementChild.innerText
+            
+            let linkador = `https://api.whatsapp.com/send?phone=55${numero}&text=${texto}`;
+
+           /* console.log(texto)
+            alert(`VAI ENVIAR "${texto} " PARA O NUMER ${numero}`) */
+            window.open(linkador)
+        }
+        
+    </script>
+</body>
+</html>

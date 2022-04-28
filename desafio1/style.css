@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-image: url("https://cdn.wallpapersafari.com/1/80/8DYndB.png");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caixinhas
+{
+    width: 300px;
+    background: #daf7c1;
+
+    border-radius: 15px;
+    padding: 8px 18px;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.527);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 8px;
+
+    transition: .3s;
+}
+
+.caixinhas:hover
+{
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.377);
+}
+
+
+img
+{
+    width: 40px;
+    height: 40px;
+}
