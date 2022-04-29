@@ -36,12 +36,20 @@
         let diferensa
         let datafinal
 
+
+        if (localStorage.getItem("timer")) 
+        {
+            oadm()
+        }
+
         function oadm()
         {
             const dat = document.querySelector("input").value
 
             datafinal  = new Date(dat).getTime()
             repetidor =  setInterval(conte, 1000)
+
+            localStorage.setItem("timer",datafinal)
         }
 
         function conte()
@@ -65,7 +73,9 @@
         {
             document.querySelector("h1").innerHTML = "🤔"
             document.querySelector("input").value = "2023-03-10"
+            localStorage.removeItem("timer")
             clearInterval(repetidor)
+           
         }
 
         
