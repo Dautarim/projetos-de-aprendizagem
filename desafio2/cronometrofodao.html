@@ -12,7 +12,7 @@
     <div class="caixa">
 
         <input type="date" name="data" id="data" value="2023-03-10">
-        <button class="start" onclick="Ex()">
+        <button class="start" onclick="oadm()">
             Começa
         </button>
         <button class="start res" onclick="rese()">
@@ -21,19 +21,55 @@
     </div>
 
     <h1>
-        🙄
+        🤔
     </h1>
 
     <script>
 
-        const dat = document.querySelector("input").value  
+        const segundo = 1000
+        const minuto = 60 * segundo
+        const hora = 60 * minuto
+        const dia = 24 * hora
+         
 
-        function Ex()
+        let repetidor 
+        let diferensa
+        let datafinal
+
+        function oadm()
         {
-            console.log(`A data de hoje é ${dat}`)
+            const dat = document.querySelector("input").value
+
+            datafinal  = new Date(dat).getTime()
+            repetidor =  setInterval(conte, 1000)
+        }
+
+        function conte()
+        {
+            
+            let agora = new Date().getTime()
+            
+            diferensa = datafinal - agora
+
+            const dias = Math.floor(diferensa / dia)
+            const horas = Math.floor((diferensa % dia) / hora) + 3 
+            const minutos = Math.floor((diferensa % hora) / minuto)
+            const segundos = Math.floor((diferensa % minuto) / segundo)
+
+            document.querySelector("h1").innerHTML = `${dias} DIAS: ${horas} HORAS: ${minutos} MIN: ${segundos} SEG`
         }
 
         
+
+        function rese()
+        {
+            document.querySelector("h1").innerHTML = "🤔"
+            document.querySelector("input").value = "2023-03-10"
+            clearInterval(repetidor)
+        }
+
+        
+       
        
 
     </script>

@@ -10,7 +10,7 @@
 
 body
 {
-    background: url("https://nerdhits.com.br/wp-content/uploads/2021/11/arcane-wallapeper.jpg");
+    background: url("http://noticias.maisesports.com.br/wp-content/uploads/2021/11/Arcane-LoL-Jinx.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darkgray;
@@ -68,4 +68,5 @@ input
 h1
 {
     font-size: 65px;
+    color: white;
 }
