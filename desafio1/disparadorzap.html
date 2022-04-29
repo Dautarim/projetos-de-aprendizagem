@@ -63,11 +63,14 @@
         <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png" alt="">
     </div>
 
+    <div class="caixinhas adicionar" onclick="adicionar()">
+        <p> ADICIONAR FRASE 
+        </p>
+        <img src="https://www.pngmart.com/files/21/Green-Add-Button-PNG.png" alt="">
+    </div>
+
     <script>
-        function abre()
-        {
-            window.open("https://www.instagram.com/mariaizabelcel/?hl=pt-br")
-        }
+        
         function enviar(nome)
         {
             let numero = prompt("Digite o numero do zap do destinatário")
@@ -79,6 +82,27 @@
            /* console.log(texto)
             alert(`VAI ENVIAR "${texto} " PARA O NUMER ${numero}`) */
             window.open(linkador)
+        }
+
+        function adicionar()
+        {
+            let frase = prompt("Digite a frase")
+
+            var criacaixa = document.createElement("div")
+            var criafrase = document.createTextNode(`${frase}`)
+            var criarimagem = document.createElement("img")
+
+            criarimagem.setAttribute('src','https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-512.png')
+
+            criacaixa.setAttribute('class', 'caixinhas')
+            criacaixa.appendChild(criafrase)
+            criacaixa.appendChild(criarimagem)
+            criacaixa.setAttribute('onclick','enviar(this)')
+
+            var nova = document.getElementById("div1")
+
+            document.body.insertBefore(criacaixa,nova)
+            
         }
         
     </script>

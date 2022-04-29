@@ -40,6 +40,18 @@ body
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.377);
 }
 
+.caixinhas.adicionar
+{
+    background: #66c512;
+    color: white;
+
+    transition: .4s;
+}
+
+.caixinhas.adicionar:hover
+{
+    background: #0d2761;
+}
 
 img
 {
