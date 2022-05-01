@@ -9,8 +9,9 @@
 body
 {
 
-    background: url("https://niisiis.ru/fuckpix/download/lela-star-5-1920x1080.jpg");
+    background: url("https://blog.hubspot.com/hubfs/To_Do_List.png");
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 
     display: flex;
@@ -30,13 +31,13 @@ body
 
     width: 400px;
     
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
 .card h3
 {
-    background: blueviolet;
+    background: rgb(38, 12, 63);
     color: white;
     font-weight: 600;
     padding: 10px;
@@ -49,11 +50,16 @@ body
     align-items: center;
     justify-content: center;
 
-    margin-top: 15px;
+    margin: 15px 5px 5px 5px;
     padding: 5px;
-    background: rgb(185, 124, 241);
+    border-radius: 3px;
+
+    background: rgb(46, 37, 54);
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
     font-weight: 700;
+    color: white;
 
     transition: .4s;
 }
@@ -69,19 +75,33 @@ body
     display: block;
     padding: 10px;
     font-weight: 700;
+    font-size: 1.5em;
 
 }
 
 .card ul
 {
+    overflow-y: scroll;
     padding: 15px;
 
-    min-height: 300px; 
+    max-height: 200px; 
+    min-height: 100px;
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
+}
+.card ul::-webkit-scrollbar
+{
+    background: rgba(46, 46, 46, 0.199);
+    width: 5px; 
+    border-radius: 8px;
+}
+.card ul::-webkit-scrollbar-thumb
+{
+    background: rgb(130, 2, 250);
+    border-radius: 6px;
 }
 
 .card ul li

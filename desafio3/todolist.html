@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LISTA DE AFAZERES</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,34 +13,17 @@
 
         <h3>A FAZER</h3>
 
-        <ul>
+        <ul id="afazer" ondrop="largar(event, this.id)" ondragover="emcima(event)">
 
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-            
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
+        
 
         </ul>
 
-        <div class="addicionart">
+        <div class="addicionart" onclick="addcard(this)">
             <ion-icon name="add-outline"></ion-icon>
             <p>
                 ADICIONAR A TAREFA
             </p>
-
         </div>
     </div>
 
@@ -48,29 +31,12 @@
 
         <h3>FAZENDO</h3>
 
-        <ul>
+        <ul id="fznd" ondrop="largar(event, this.id)" ondragover="emcima(event)">
 
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-
+            
         </ul>
 
-        <div class="addicionart">
+        <div class="addicionart" onclick="addcard(this)">
             <ion-icon name="add-outline"></ion-icon>
             <p>
                 ADICIONAR A TAREFA
@@ -83,28 +49,12 @@
 
         <h3>FEITO</h3>
 
-        <ul>
+        <ul id="done" ondrop="largar(event, this.id)" ondragover="emcima(event)">
 
-            <li>
-                <p>Contar pra ela </p>
-                <p class="excluir">x</p>
-            </li>
-
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
-
-            <li>
-                <p>Contar pra ela</p>
-                <p class="excluir">x</p>
-
-            </li>
 
         </ul>
 
-        <div class="addicionart">
+        <div class="addicionart" onclick="addcard(this)">
             <ion-icon name="add-outline"></ion-icon>
             <p>
                 ADICIONAR A TAREFA
@@ -115,6 +65,58 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <script>
+
+        function arastar(event)
+        {
+            console.log("arastando")
+            event.dataTransfer.setData("tarefinh", event.target.id)
+            console.log(event.dataTransfer.getData("tarefinh"))
+        }
+
+        function emcima(event)
+        {
+            event.preventDefault()
+        }
+
+        function largar(event,id)
+        {
+            event.preventDefault()
+           
+            console.log(event.dataTransfer.getData("tarefinh"))
+            console.log("vava fez isso, demadrugada e bebado.")
+            const replicador = document.getElementById(id)
+            const pegadados = event.dataTransfer.getData("tarefinh")
+            const pegaid = document.getElementById(pegadados)
+
+            replicador.appendChild(pegaid)
+           
+            
+        }
+
+        function addcard(quemchamou)
+        {
+            const tarefaadicionada = prompt("DIGITE O NOME DA TAREFA")
+            const iddalista = quemchamou.previousElementSibling.id
+            
+            const alista = document.getElementById(iddalista)
+            const atarefa = ` <li id = "${new Date().getTime()}" draggable="true" ondragstart="arastar(event)">
+                <p>${tarefaadicionada}</p>
+                <p class="excluir" onclick="removertarefa(this)">x</p>
+
+            </li> `
+
+            alista.innerHTML += atarefa
+
+        }
+
+        function removertarefa(quemchamou)
+        {
+            
+            document.getElementById(quemchamou.parentElement.id).remove();
+            
+        }
+    </script>
 </body>
 
 
