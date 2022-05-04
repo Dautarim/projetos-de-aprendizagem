@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root
+{
+    font-size: 62.5%;
+
+    --verde1: #00856F;
+    --verde2: #DCE9E2;
+    --escura: #212529;
+    --ecuro2: #495057;
+    --branco: white;
+    --preto: black;
+    --bege:#FFFAF1;
+
+    --fonte1: 'DM Sans', sans-serif;
+    --fonte2: 'Arial', sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte1);
+}
+
+header
+{
+
+    background: var(--verde2);
+
+    margin: auto;
+    width: 37.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 4.1rem 2.4rem;
+}
+
+header>h4
+{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: var(--verde1);
+
+    margin-bottom: 1.6rem;
+
+}
+
+header>h1
+{
+    width: 32.7rem;
+    height: 13.2rem;
+    margin-bottom: 2.4rem;
+
+
+    color: var(--escura);
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 4.42rem;
+    text-align: center;
+
+}
+
+header>p
+{
+    width: 32.7rem;
+    height: 10.8rem;
+    margin-bottom:3.2rem ;
+
+    color: var(--ecuro2);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: center;
+
+}
+
+header button
+{
+    background: var(--verde1);
+    border: none;
+    padding: 1.6rem 3.2rem;
+    width: 26.3rem;
+    border-radius: 4rem;
+
+    margin: auto;
+    margin-bottom: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    font-size: 1.4rem;
+    line-height: 1.823rem;
+    color: var(--branco);
+    text-transform: uppercase;
+
+}
+
+.metas
+{
+    width: 32.7rem;
+    height: 47rem;
+
+    background: var(--bege);
+    border-radius: .6rem;
+    
+}
+
+.metas .pacientesatendidos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.metas .pacientesatendidos h3
+{
+    font-size: 4.8rem;
+    color: var(--escura);
+    line-height: 6.24rem;
+    text-align: center;
+
+    margin: .4rem;
+}
+
+.metas .pacientesatendidos p
+{
+    color: var(--verde1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+}
+
+.metas .especialistasdisponiveis
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 6rem;    
+}
+
+.metas .especialistasdisponiveis h3
+{
+    font-size: 4.8rem;
+    color: var(--escura);
+    line-height: 6.24rem;
+    text-align: center;
+
+    margin: .4rem;
+}
+
+.metas .especialistasdisponiveis p
+{
+    color: var(--verde1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.metas .anosnomercado
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 4rem;    
+}
+
+.metas .anosnomercado h3
+{
+    font-size: 4.8rem;
+    color: var(--escura);
+    line-height: 6.24rem;
+    text-align: center;
+
+    margin: .4rem;
+}
+
+.metas .anosnomercado p
+{
+    color: var(--verde1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
