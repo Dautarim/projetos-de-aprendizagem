@@ -17,6 +17,8 @@ body
     background: rgb(4, 6, 27);
 }
 
+
+
 .notification-icom
 {
     width: fit-content;
@@ -56,10 +58,9 @@ body
     padding: 8px 16px;
     border-radius: 10px;
     display: flex;
-    opacity: 1;
+    opacity: 0;
     transition: .4s;
 
-   
 }
 
 
@@ -102,7 +103,6 @@ body
 
 .coracao:hover.notification
 {
-    transform: scale(1);
     opacity: 1;
 } 
 
