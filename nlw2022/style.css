@@ -15,7 +15,7 @@
     --fonte1: 'DM Sans', sans-serif;
     --fonte2: 'Arial', sans-serif;
 
-    --valor-nav:
+    --valor-nav: 7.2rem;
 }
 
 *
@@ -26,47 +26,79 @@
     font-family: var(--fonte1);
 }
 
-nav
+.pacotenavheader
 {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
+    
     padding-inline: 2.4rem;
-    padding-top: 1.6rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-inline: auto;
+    width: 37.5rem;
 }
+
+
 
 header::before
 {
     content: "";
-
+    
     position: absolute;
     top: 0;
     right: 0;
 
     width: 100vw;
-    height: 108rem;
+    height: calc(108rem + var(--valor-nav));
     background: var(--verde2);
+    display: block;
 
     z-index: -1;
 }
 
+nav
+{
+   
+    height: var(--valor-nav);
+    padding: 1.6rem 2.4rem;
+   
+  
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav.ativo
+{
+    background: var(--verde1);
+    width: 100vw;
+    transition: .3s;
+}
+
+nav .pacotenavheader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.ativo svg:nth-child(1) path
+{
+    fill: var(--branco); 
+}
+
+nav.ativo svg:nth-child(2) path
+{
+    stroke: var(--branco);
+}
 header
 {
-
-    margin: auto;
-    width: 37.5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    padding: 4.1rem 2.4rem;
+    margin-top: calc(4.1rem + var(--valor-nav));
+    
 }
 
 header>h4
@@ -130,6 +162,14 @@ header button
     line-height: 1.823rem;
     color: var(--branco);
     text-transform: uppercase;
+
+}
+
+header>img
+{
+    height: 34.2rem;
+    width: 26.164rem;
+    margin: auto;
 
 }
 
