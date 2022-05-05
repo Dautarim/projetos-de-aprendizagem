@@ -14,6 +14,8 @@
 
     --fonte1: 'DM Sans', sans-serif;
     --fonte2: 'Arial', sans-serif;
+
+    --valor-nav:
 }
 
 *
@@ -24,10 +26,38 @@
     font-family: var(--fonte1);
 }
 
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-inline: 2.4rem;
+    padding-top: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 108rem;
+    background: var(--verde2);
+
+    z-index: -1;
+}
+
 header
 {
-
-    background: var(--verde2);
 
     margin: auto;
     width: 37.5rem;
@@ -103,99 +133,42 @@ header button
 
 }
 
+
+
 .metas
 {
     width: 32.7rem;
     height: 47rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    padding-block: 4rem;
 
     background: var(--bege);
     border-radius: .6rem;
     
 }
 
-.metas .pacientesatendidos
+.metas .passo
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-inline: auto;
+
 }
 
-.metas .pacientesatendidos h3
+.metas .passo h3
 {
     font-size: 4.8rem;
     color: var(--escura);
-    line-height: 6.24rem;
     text-align: center;
-
-    margin: .4rem;
 }
-
-.metas .pacientesatendidos p
+.metas .passo p
 {
+    margin: 0;
     color: var(--verde1);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
-
-}
-
-.metas .especialistasdisponiveis
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 6rem;    
-}
-
-.metas .especialistasdisponiveis h3
-{
-    font-size: 4.8rem;
-    color: var(--escura);
-    line-height: 6.24rem;
     text-align: center;
-
-    margin: .4rem;
-}
-
-.metas .especialistasdisponiveis p
-{
-    color: var(--verde1);
     font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
-}
-
-.metas .anosnomercado
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 4rem;    
-}
-
-.metas .anosnomercado h3
-{
-    font-size: 4.8rem;
-    color: var(--escura);
-    line-height: 6.24rem;
-    text-align: center;
-
-    margin: .4rem;
-}
-
-.metas .anosnomercado p
-{
-    color: var(--verde1);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
 }
 
