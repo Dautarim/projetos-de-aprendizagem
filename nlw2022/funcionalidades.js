@@ -11,3 +11,13 @@ function onScroll()
     }
 
 }
+
+function abremenu()
+{
+    bodyid.classList.add('mainmenu')
+}
+
+function fechamenu()
+{
+    bodyid.classList.remove('mainmenu')
+}

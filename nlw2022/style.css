@@ -26,6 +26,18 @@
     font-family: var(--fonte1);
 }
 
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+ul
+{
+    list-style: none;
+}
+
 .pacotenavheader
 {
     
@@ -44,7 +56,7 @@ header::before
     top: 0;
     right: 0;
 
-    width: 100vw;
+    width: 100%;
     height: calc(108rem + var(--valor-nav));
     background: var(--verde2);
     display: block;
@@ -86,7 +98,7 @@ nav.ativo svg:nth-child(1) path
     fill: var(--branco); 
 }
 
-nav.ativo svg:nth-child(2) path
+nav.ativo button path
 {
     stroke: var(--branco);
 }
@@ -212,3 +224,128 @@ header>img
     font-size: 1.6rem;
 }
 
+/*=======================================================================================*/
+body.mainmenu
+{
+    overflow: hidden;
+}
+
+body.mainmenu > :not(nav)
+{
+    display: none;
+}
+
+nav button
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu,
+.menu-fechar,
+body.mainmenu .menu-abrir
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+body.mainmenu .menu,
+body.mainmenu .menu-fechar
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+body.mainmenu .menu
+{
+    background: var(--verde1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding-top: var(--valor-nav);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+body.mainmenu nav
+{
+    position: relative;
+}
+
+
+.menu .itens
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-top: 6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    text-align: center;
+}
+
+.menu .itens a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.menu .botmenu
+{
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+
+    background: #FFFFFF;
+    border-radius: 4rem;
+    margin: auto;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    color: var(--verde1);
+    text-decoration: none;
+
+    margin-top: 4.8rem;
+    margin-bottom: 8rem;
+
+}
+
+.redes-sociais
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+body.mainmenu .logo,
+body.mainmenu button
+{
+    position: relative;
+    z-index: 10;
+}
+
+body.mainmenu .logo path
+{
+    fill: var(--branco); 
+}
+
+body.mainmenu button path
+{
+    stroke: var(--branco);
+}
