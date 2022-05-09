@@ -81,14 +81,14 @@ nav
 
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+
+    width: 100vw;
+    
 }
 
 nav.ativo
 {
-    background: var(--verde1);
-    width: 100vw;
+    background: var(--verde1); 
     transition: .3s;
 }
 
@@ -99,7 +99,7 @@ nav .pacotenavheader
     justify-content: space-between;
 }
 
-nav.ativo svg:nth-child(1) path
+nav.ativo .logo path
 {
     fill: var(--branco); 
 }
@@ -239,7 +239,7 @@ body.mainmenu
 
 body.mainmenu > :not(nav)
 {
-    display: none;
+    visibility: hidden;
 }
 
 nav button
@@ -265,12 +265,6 @@ body.mainmenu .menu-fechar
     visibility: visible;
 }
 
-.menu
-{
-    transform: translateY(100%);
-}
-
-
 body.mainmenu .menu
 {
     background: var(--verde1);
@@ -292,12 +286,6 @@ body.mainmenu .menu
     transform: translateY(0);
 
 }
-
-body.mainmenu nav
-{
-    position: relative;
-}
-
 
 .menu .itens
 {
