@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <h3>VALIDADOR DE E-MAIL</h3>
+        <form id="frm" action="#">
+            <div class="caixaimput">
+                <input type="text"  id="email" placeholder="Digite o seu E-mail" onkeyup="validador()">
+                <span id="indicador"></span>
+            </div>
+        </form>
+        
+    </div>
+
+    <script>
+        function validador()
+        {
+            const patern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+            const email = document.getElementById('email').value 
+            const formulario = document.getElementById('frm')
+
+           if(email.match(patern))
+           {
+               formulario.classList.add('certo')
+           }
+           else
+           {
+                formulario.classList.add('errado')
+                formulario.classList.remove('certo')
+           }
+        }
+    </script>
+</body>
+</html>
