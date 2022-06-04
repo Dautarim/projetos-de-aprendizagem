@@ -1,0 +1,77 @@
+
+
+body
+{
+    background: white;
+    animation: dianoite 10s infinite 1.5s;
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.sun
+{
+    height: 150px;
+    width: 159px;
+    border-radius: 50%;
+    background: #fcd25b;
+    border: 3px solid #fcd25b;
+    box-shadow:0px 0px 5px #fcd25b;
+}
+
+.shadow
+{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    top: -5px;
+    left: 0px;
+    animation: eclipse 10s infinite 1.5s;
+}
+
+@keyframes dianoite
+{
+    0%
+    {
+        background: white;
+    }
+
+    50%
+    {
+        background: black;
+    }
+
+    100%
+    {
+        background: white;
+    }
+}
+
+
+@keyframes eclipse
+{
+    0%
+    {
+       transform: translateX(150px); 
+        background: white;
+    }
+
+    50%
+    {
+        transform: translateX(-10px);
+        background: black;
+    }
+
+    100%
+    {
+        transform: translateX(-170px);
+        background: white;
+    }
+}

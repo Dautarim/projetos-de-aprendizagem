@@ -1,0 +1,62 @@
+
+
+
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #141414;
+}
+
+.cards
+{
+    perspective: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    width: 200px;
+    height: 250px;
+    background: brown;
+    background: url("https://i.pinimg.com/474x/92/a3/f4/92a3f49bc00bec60342a6b306e3ab2fe.jpg");
+    background-position: center bottom;
+
+    background-size: cover;
+
+    border-radius: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .4s;
+}
+
+.card:hover
+{
+    transform: translateZ(10px) rotateX(10deg) rotateY(30deg);
+}
+
+.card-title
+{
+    color: rgb(253, 253, 253);
+    font-size: 24px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+
+    position: absolute;
+    top: 80%;
+    right: 10px;
+    text-shadow: 0 0 10px black;
+
+    transition: transform .4s;
+}
+
+
+.card:hover .card-title
+{
+    transform: translateZ(50px);
+}
