@@ -1,0 +1,86 @@
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh
+}
+
+
+button
+{
+
+    border: none;
+    background-color: lightgrey;
+    
+
+    border-radius: 24px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.192);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+button:hover
+{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.021);
+}
+
+button:hover svg
+{
+    animation: vaivolta .6s linear infinite;
+  
+}
+
+
+button svg
+{
+   font-size: 24px;
+   margin-right: 10px ;
+   background: rgb(49, 197, 223);
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+  
+}
+
+@keyframes vaivolta
+{
+    0%
+    {
+      
+        transform: translateX(0px);
+    }
+
+   
+
+    50%
+    {
+        
+        transform: translateX(6px);
+    }
+
+   
+
+    100%
+    {
+      
+        transform: translateX(0px);
+    }
+
+
+}
+
+button span
+{
+    color: rgb(1, 1, 39);
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
