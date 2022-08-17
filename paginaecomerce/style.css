@@ -159,10 +159,10 @@ aside
 
 aside .topo
 {
-    background: var(--cor-branca);
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1.4rem;
 }
 
@@ -187,7 +187,7 @@ aside .topo .menubtn
 
 aside .baradeopcoes
 {
-    background: var(--cor-branca);
+   
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -207,9 +207,30 @@ aside .baradeopcoes a
     transition: all 300ms ease;
 }
 
+aside .baradeopcoes a:hover
+{
+    color: var(--cor-principal);
+}
+
 aside .baradeopcoes a span
 {
     font-size: 1.6rem;
+    transition: all 200ms ease;
+}
+
+aside .baradeopcoes a span.menum
+{
+    font-size: 11px;
+    color: var(--cor-branca);
+    border-radius: var(--border-radios-1);
+    background: var(--cor-danger);
+    padding: 2px 7px;
+}
+
+aside .baradeopcoes a:hover span
+{
+    margin-left: 1rem;
+   
 }
 
 aside .baradeopcoes a:last-child
