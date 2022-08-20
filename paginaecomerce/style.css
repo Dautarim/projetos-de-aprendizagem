@@ -27,6 +27,16 @@
     --box-shadow: 0 2rem 3rem var(--cor-claro);
 }
 
+.variaveis-tema-escuro
+{
+    --cor-bacground:#181a1e;
+    --cor-branca:#202528;
+    --cor-escuro:#edeffd;
+    --cor-escuro-variante:#a3bdcc;
+    --cor-claro:rgba(0,0,0,0.4);
+    --box-shadow:0 2rem 3rem var(--cor-claro);
+}
+
 *
 {
 
@@ -714,14 +724,14 @@ main .pedidos-recentes a
 {
     .container
     {
-        width: 100%;
+        width: 100vw;
         grid-template-columns: 1fr;
     }
 
     aside
     {
         position: fixed;
-        left: 0;
+        left: -100%;
         background: var(--cor-branca);
         width: 18rem;
         z-index: 3;
@@ -729,6 +739,20 @@ main .pedidos-recentes a
         height: 100vh;
         padding-right: var(--padding-card);
         display: none;
+        animation: entrada 400ms ease forwards;
+        transition: all 4ms ease;
+    }
+
+    @keyframes entrada {
+        to{
+            left: 0;
+        }
+    }
+
+    @keyframes saida {
+        to{
+            left: -100%;
+        }
     }
 
     aside .logo
