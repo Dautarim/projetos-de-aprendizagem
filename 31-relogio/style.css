@@ -111,6 +111,7 @@ body .container::after
     height: 98%;
     background: var(--escuro);
     border-radius: 20px;
+    transition: all .3s ease;
 }
 
 body .container::before
