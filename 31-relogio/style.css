@@ -1,0 +1,93 @@
+@font-face {
+    font-family:"hora" ;
+    src: url(fonte/DS-DIGIT.TTF);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "hora";
+    color: var(--numero);
+}
+
+:root
+{
+    --escuro: rgb(31, 30, 30);
+    --numero: rgb(0, 247, 255);
+    --contrario: rgb(235, 231, 231);
+    --cinza: gray;
+}
+
+.trocado
+{
+    --escuro: rgb(255, 255, 255);
+    --numero: rgb(0, 0, 0);
+    --contrario: rgb(31, 30, 30);
+    --cinza: gray;
+}
+
+body
+{
+    transition: all .4s ease;
+    position: relative;
+    background: var(--escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.trocatema
+{
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: var(--contrario);
+    border:1px solid var(--contrario) ;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trocatema .tem.sel
+{
+    height: 100%;
+    border-radius: 10px;
+    background: var(--escuro);
+   
+    
+}
+.trocatema .tem
+{
+    padding: 5px;
+}
+
+.trocatema .tem.sel ion-icon
+{
+    color: var(--contrario);
+    transition: all .3s ease;
+}
+
+.trocatema .tem ion-icon
+{
+    color: var(--escuro);
+}
+
+body .container
+{
+    display: flex;
+    gap: 40px;
+}
+
+body .container .tempo
+{
+    font-size: 6em;
+    text-shadow: 0px 0px 10px var(--numero), 0px 0px 15px var(--numero) ;
+}
