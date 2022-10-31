@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylestylestylestyle.css">
+</head>
+<body class="tudo" >
+    <div class="botao" onclick="on0ff()">
+        <div class="inter">
+            <span class="circulo"></span>
+
+            <span class="efe">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+        </div>
+
+        <div class="othefe">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script>
+        let bt = document.querySelector(".botao")
+
+        bt.addEventListener(('click'), function onoff() {
+            let interruptor = document.querySelector('.inter').classList.toggle('ligado')
+            let letrafora = document.querySelector('.othefe').classList.toggle('ligado')
+            this.classList.toggle('ligado')
+            let bod = document.querySelector('.tudo').classList.toggle('ligado')
+        })
+    </script>
+</body>
+</html>

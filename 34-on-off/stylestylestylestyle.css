@@ -1,0 +1,243 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root
+{
+    --back: rgb(4, 0, 29);
+}
+
+body.ligado
+{
+    --back: rgb(255, 255, 255);
+    transition: all .5s ease-in-out;
+}
+
+body
+{
+    transition: all .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--back);
+}
+
+.botao 
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    width: 200px;
+    height:100px;
+    background: var(--back);
+    border-radius: 20px;
+    box-shadow: 0px 24px 74px rgba(0, 0, 0, 0.473)
+    
+}
+
+.botao.ligado
+{
+    box-shadow: 0px 24px 74px rgb(60 0 189 / 16%)
+}
+
+.botao .inter
+{
+    position: relative;
+    background: rgb(202, 0, 0);
+    left: -25px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.botao .inter .circulo
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 7px solid white;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.botao .inter.ligado
+{
+    background: green;
+}
+
+.botao .inter.ligado .circulo
+{
+    left: 45px;
+    transition: all .5s ease-in-out;
+}
+
+.botao .inter.ligado .efe
+{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.botao .inter .efe
+{
+    transition: all .5s ease-in-out;
+    transition-delay: .2s;
+    position: absolute;
+    top: 50.9%;
+    right: 10px;
+    transform: translateY(-49.5%);
+    
+    width: 40px;
+    height: 40px;
+}
+
+.botao .inter .efe span
+{
+    display: block;
+    width: 25px;
+    border-radius: 10px;
+    height: 7px;
+    background: white;
+}
+
+.botao .inter .efe span:nth-child(1)
+{
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    
+}
+
+.botao .inter .efe span:nth-child(2)
+{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+   
+}
+
+.botao .inter .efe span:nth-child(3)
+{
+    position: absolute;
+    width: 30px;
+    top: 16px;
+    left: 1px;
+    transform: rotate(90deg);
+}
+
+/*---------------------outro efe-------------------*/
+
+
+
+
+.botao .othefe
+{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
+    
+    width: 40px;
+    height: 40px;
+   
+    
+}
+
+.botao  .othefe span
+{
+    transition: transform .5s ease-in-out ;
+    display: block;
+    width: 25px;
+    border-radius: 10px;
+    height: 7px;
+    background: rgb(202, 0, 0);
+    
+}
+
+.botao .othefe span:nth-child(1)
+{ 
+    position: absolute;
+    top: 4px;
+    right: 2px;
+   
+}
+
+.botao .othefe span:nth-child(2)
+{ 
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+.botao .othefe span:nth-child(3)
+{
+    position: absolute;
+    width: 30px;
+    top: 16px;
+    left: 1px;
+    transform: rotate(90deg);
+}
+
+
+
+/*---------------------LIGADO-------------------*/
+
+.botao .othefe.ligado
+{
+    transition: transform .5s ease-in-out ;
+
+}
+
+
+.botao .othefe.ligado span
+{
+    transition: all .5s ease-in-out ;
+    display: block;
+    width: 30px;
+    border-radius: 10px;
+    height: 7px;
+    background: green;
+    
+}
+
+.botao .othefe.ligado span:nth-child(1)
+{
+   position: absolute;
+    transform: rotate(-90deg);
+    top: 16px;
+    left: 16px;
+    
+}
+
+.botao .othefe.ligado span:nth-child(2)
+{
+    
+    position: absolute;
+
+    top: 50%;
+    right: 50%;
+    transform: translate(60% ,-50%) rotate(55deg);
+}
+
+.botao .othefe.ligado span:nth-child(3)
+{
+    position: absolute;
+    width: 30px;
+    top: 16px;
+    left: -1px;
+    transform: rotate(90deg);
+}
+

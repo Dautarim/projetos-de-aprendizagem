@@ -13,6 +13,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(0, 0, 20);
     min-height: 100vh;
 }
 
@@ -55,7 +56,7 @@ body
 .botao::before
 {
     top: -120px;
-    background: rgb(112, 105, 216);
+    background: rgba(38, 30, 158, 0.877);
 }
 
 .botao::after
@@ -63,7 +64,8 @@ body
     animation-delay: .2s;
     top: -120px;
     right: 10px;
-    background: rgb(36, 24, 209);
+   
+    background: rgb(0, 0, 20);
 }
 
 
