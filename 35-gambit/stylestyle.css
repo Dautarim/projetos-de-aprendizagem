@@ -1,0 +1,66 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body
+{
+	display: grid;
+	min-height: 100vh;
+	place-content: center;
+}
+
+.caixa
+{
+	background: rgba(0, 0, 255, 0);
+}
+
+.conteudo
+{
+	background: #333;
+	height: 400px;
+	width: 300px;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: girando 3s linear infinite ;
+	border-radius: 20px;
+	
+}
+
+@keyframes girando
+{
+	to 
+	{
+		transform: rotateY(360deg);
+	}
+}
+
+.conteudo div img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+
+.tras,
+.frente
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: inherit;
+}
+
+.frente
+{
+	background: rebeccapurple;
+}
+
+.tras
+{
+	background: rgb(255, 0, 255);
+	transform: rotateY(180deg);
+}
