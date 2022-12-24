@@ -84,7 +84,7 @@ body{
 
 }
 
-.container .meter span{
+.container .meter label{
 
     position: absolute;
     font-size: 15px;
@@ -96,8 +96,8 @@ body{
     transition: .5s;
 }
 
-.container .meter input:focus ~span,
-.container .meter input:valid ~span
+.container .meter input:focus ~label,
+.container .meter input:valid ~label
 {
     transform: translateY(-35px) translateX(-10px);
     color:  rgb(255, 251, 251);
